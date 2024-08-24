@@ -1,0 +1,60 @@
+/* SHIFT + F6 roda o programa */
+package operadores;
+
+import java.util.Scanner; /* Essa biblioteca faz com que o usuário 
+faca um input np programa
+*/
+
+
+public class Operadores { /* Nome da classe */
+    
+    public static void main(String[] args) {
+        Scanner scann = new Scanner(System.in);
+        /* TIPOS DE VARIÁVEIS: */
+        /*byte n3;
+        long n4;
+        short n5; */
+        /* int ou integer: */
+        int a = 10 ;
+        int b = 2;
+        /* boolean (true or false):*/
+        boolean status = false;
+        char letra = 'L'; /* Armazena apenas letra */
+        float numero = (float) 3.0;
+        double t1 = 3.11;
+        String palavra = "Uma palavra ou várias";
+        
+        /*Somando A + B:*/
+        System.out.println("Soma de A + B = " + (a+b)); 
+        System.out.println("Subtração de A - B = " + (a-b));
+        System.out.println("Multiplicação de A e B = "+ (a*b));
+        System.out.println("Quociente de A e B = "+ (a/b)); /*Divisão inteira*/
+        System.out.println("Módulo de A % B ="+(a%b)); /*Resto da divisão */
+        
+        /*DESAFIO: Some 5 valores e depois faça a média. */
+        
+        int v1 = 23;
+        int v2 = 14 ;
+        int v3 = 13 ;
+        int v4 = 9;
+        int v5 = 6; 
+        
+       
+        
+        System.out.println("A media dos 5 números é = " + ((v1 + v2 + v3 + v4 + v5)/5));
+        
+                
+        /*DESAFIO 2- Verificar se é par ou ímpar */     
+        System.out.println("Digite um número: ");
+        int verifica = scann.nextInt();
+        
+        if (verifica % 2 == 0){
+            System.out.println("Número PAR");
+        }else {
+            System.out.println("Número ÍMPAR");
+        }
+        
+    }
+    
+}
+
