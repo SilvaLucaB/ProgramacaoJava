@@ -1,11 +1,11 @@
 /* Shift + F6 roda o programa 
 DESAFIO 1: ESCREVER UM ALGORITMO QUE LEIA UMA IDADE 
-E DIGA SE A MESMA É > 18 ANOS OU NÃO
-*/
+E DIGA SE A MESMA É > 18 ANOS OU NÃO */
+
 package condicionais;
     
 import java.util.Scanner;    /*Essa biblioteca faz com que o usuário 
-faca um input np programa */   
+faca um input np programa  */ 
 public class Condicionais {
 
     public static void main(String[] args) {
@@ -19,6 +19,28 @@ public class Condicionais {
      } else {
          System.out.println("Menor de Idade");
      }
+     
+     /*DESAFIO 2: LER 3 NOTAS, DIZER A MÉDIA E VERIFICAR SE A MESMA É >=6 
+       PARA TER A APROVAÇÃO: */
+     
+     System.out.println("Digite a primeira nota: ");
+     double n1 = scann.nextDouble();
+     System.out.println("Digite a segunda nota: ");
+     double n2 = scann.nextDouble();
+     System.out.println("Digite a terceira nota: ");
+     double n3 = scann.nextDouble();
+     
+     double media = (n1 + n2 + n3)/3;
+     System.out.println("Sua media foi" + media);
+     
+    if ( media >= 6){
+        System.out.println("Aprovado! ");
+    } else{
+        System.out.println("Reprovado!");
+    }
+
     }
     
-}
+} 
+
+
