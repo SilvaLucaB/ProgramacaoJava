@@ -1,0 +1,24 @@
+/* Shift + F6 roda o programa 
+DESAFIO 1: ESCREVER UM ALGORITMO QUE LEIA UMA IDADE 
+E DIGA SE A MESMA É > 18 ANOS OU NÃO
+*/
+package condicionais;
+    
+import java.util.Scanner;    /*Essa biblioteca faz com que o usuário 
+faca um input np programa */   
+public class Condicionais {
+
+    public static void main(String[] args) {
+    
+     Scanner scann = new Scanner(System.in);
+     System.out.println("Digite a sua idade: ");
+     int idade = scann.nextInt();
+     
+     if (idade > 18){
+         System.out.println("Maior de Idade");
+     } else {
+         System.out.println("Menor de Idade");
+     }
+    }
+    
+}
