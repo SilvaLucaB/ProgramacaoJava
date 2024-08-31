@@ -9,7 +9,7 @@ faca um input np programa  */
 public class Condicionais {
 
     public static void main(String[] args) {
-    
+    /* DESAFIO 1 = VERIFICAR SE É MAIOR DE IDADE */
      Scanner scann = new Scanner(System.in);
      System.out.println("Digite a sua idade: ");
      int idade = scann.nextInt();
@@ -38,6 +38,48 @@ public class Condicionais {
     } else{
         System.out.println("Reprovado!");
     }
+    
+    /*Desafio 3:  Dizer se o triangulo é isósceles, escaleno ou equilátero */
+
+    System.out.println("Digite o primeiro Lado do triangulo: ");
+    int l1 = scann.nextInt();
+    System.out.println("Digite o segundo Lado do triangulo: ");
+    int l2 = scann.nextInt();
+    System.out.println("Digite o terceiro Lado do triangulo: ");
+    int l3 = scann.nextInt(); 
+     /* e (&&) / ou (||) */
+     
+     
+    if (l1 == l2 && l1 == l3 && l2==l3){
+        System.out.println("Triangulo Equilatero "); /*3 iguais */
+    }else if (l1 != l2 && l1 != l3 && l2 != l3 ){
+        System.out.println("Triangulo Escaleno "); /* escaleno todos diferentes */
+    } else if (l1 == l2 || l1 == l3 || l2==l3){
+        System.out.println("Triangulo Isosceles "); 
+    }
+            
+    /* Desafio 4: Faça um algoritmo para ler o salario de um funcionário
+    e aumentá-lo em 15%. Após desconto 8% de impostos. Imprima o salario
+    inicial, o salário com o aumento e o salario final */
+            
+      
+        System.out.println("Digite o seu salario: ");
+        double sal = scann.nextDouble();
+        
+        System.out.println("Salario atual R$"+ sal);
+        
+        System.out.println("Salario atual R$"+ sal); 
+       
+       double aumento = ((sal * 15)/100) + sal;
+       System.out.println("Salario com o aumento de 15% é R$"+ aumento);
+        
+        double desconto = aumento - ((aumento * 8)/100);
+        System.out.println("Salario atual R$"+ desconto); 
+        
+    
+    }
+    
+} 
 
     }
     
